@@ -1,14 +1,15 @@
 const removeFromArray = function (arr, num1, num2, num3, num4) {
-  arr.forEach((element) => {
+  for (let i = 0; i < arr.length; i++) {
     if (
-      element === num1 ||
-      element === num2 ||
-      element === num3 ||
-      element === num4
+      arr[i] === num1 ||
+      arr[i] === num2 ||
+      arr[i] === num3 ||
+      arr[i] === num4
     ) {
-      arr.splice(arr.indexOf(element), 1);
+      arr.splice(arr.indexOf(arr[i]), 1);
+      i = 0;
     }
-  });
+  }
 
   return arr;
 };
