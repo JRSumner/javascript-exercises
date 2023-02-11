@@ -16,7 +16,7 @@ const sum = function (array) {
   return result;
 };
 
-const multiply = function (array) {};
+const multiply = function () {};
 
 const power = function (num1, num2) {
   return Math.pow(num1, num2);
